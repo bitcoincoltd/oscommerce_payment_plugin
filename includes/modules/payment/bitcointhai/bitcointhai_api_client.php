@@ -13,7 +13,7 @@ class BitcointhaiApiClient
 {
     /** @var string */
     protected $api_id;
-    protected $api_url = 'https://coinpay.in.th/api/';
+    protected $api_url = 'https://api.coinpay.co.th/';
     protected $forwarder_url = "https://forward.coinpay.co.th/";
     protected $forwarder_test_url = "https://forwarder_api.test/";
     /** @var string */
