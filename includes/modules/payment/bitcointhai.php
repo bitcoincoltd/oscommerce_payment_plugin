@@ -171,7 +171,7 @@ class Bitcointhai {
       $order_id
     );
 
-    if( $order_saved->success === false ) {
+    if( $order_saved === false ) {
       $error = "Something went wrong! Order ID can't be saved: ".$order_saved->error;
       tep_redirect(str_replace('amp;','',tep_href_link(FILENAME_CHECKOUT_PAYMENT, 'payment_error='. $this->code . '&error='. urlencode($error).'&order_id='.$order_id, 'SSL')));
     }
