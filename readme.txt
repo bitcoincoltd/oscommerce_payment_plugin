@@ -3,7 +3,7 @@ Module: osCommerce 2.3 Module Payment
 Author: info@coinpay.in.th
 
 Installation:
-1) Create a merchant account at https://coinpay.in.th
+1) Create a merchant account at https://bx.in.th
 2) Copy all contents of the /coinpay_osc2.3/ folder to your root osCommerce directory
 3) Go to osCommerce Admin -> Modules -> Payment -> Install Module -> Click on "BX CoinPay" module and "Install"
 4) Go to admin/includes/template_top.php and add following line right after jquery

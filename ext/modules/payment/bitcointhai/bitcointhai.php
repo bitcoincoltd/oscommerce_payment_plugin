@@ -16,7 +16,7 @@ $response = json_decode(file_get_contents('php://input'),true);
  */
 $api_query = tep_db_query("SELECT configuration_value FROM ".TABLE_CONFIGURATION." WHERE configuration_key='MODULE_PAYMENT_BITCOINTHAI_API_ID'");
 $api_rec = tep_db_fetch_array($api_query);
-$api_id = $api_rec['configuration_calue'];
+$api_id = $api_rec['configuration_value'];
 $api = new BitcointhaiApiClient($api_id);
 
 	//$query = tep_db_query("SELECT orders_id, orders_status FROM ".TABLE_ORDERS." WHERE orders_id='".tep_db_input($response['order_id'])."'");
